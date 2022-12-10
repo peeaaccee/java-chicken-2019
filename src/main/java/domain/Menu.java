@@ -17,4 +17,21 @@ public class Menu {
     public String toString() {
         return category + " " + number + " - " + name + " : " + price + "원";
     }
+
+    public boolean isChicken() {
+        return category == Category.CHICKEN;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public boolean isForeignKey(int number) {
+        return this.number == number;
+    }
+
 }
